@@ -7,16 +7,14 @@ description: >-
 author: YadoreZ
 future: true
 
-# ---- urls (EDIT before deploy) ----
-# Personal site repo (<you>.github.io): leave baseurl empty.
-# Project repo: set baseurl: "/<repo-name>".
-url: "https://zerodaygamer.github.io"
+# ---- urls ----
+url: "https://zerodaygamer.com"
 baseurl: ""
 
-# ---- socials (EDIT) ----
+# ---- socials ----
 github_username: zerodaygamer
 twitter_username: zerodaygamer
-youtube_url: ""
+gh_username: zdg.229261
 
 # ---- build ----
 markdown: kramdown
