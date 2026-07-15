@@ -209,3 +209,30 @@ a:focus-visible{outline:2px solid var(--cyan);outline-offset:2px;border-radius:2
   *{animation:none !important;transition:none !important;scroll-behavior:auto !important;}
   .glitch::before,.glitch::after{display:none;}
 }
+
+/* ---------- neofetch about card ---------- */
+.neofetch{display:flex;gap:1.6rem;align-items:flex-start;margin:1.5rem 0 2rem;
+  border:1px solid var(--line);border-radius:8px;background:var(--bg-soft);
+  padding:1.3rem 1.4rem;overflow-x:auto;position:relative;z-index:3;max-width:34rem;}
+.nf-ascii{color:var(--cyan);font-size:.62rem;line-height:1.08;white-space:pre;margin:0;flex:none;
+  text-shadow:.5px 0 var(--red),-.5px 0 var(--cyan);}
+.nf-ascii .sub{color:var(--dim);}
+.nf-info{flex:1;min-width:0;font-size:.82rem;line-height:1.55;}
+.nf-title{font-family:var(--display);color:var(--ink);font-size:1rem;margin-bottom:.5rem;}
+.nf-title .at{color:var(--red);}
+.nf-head{display:flex;align-items:center;gap:.6rem;color:var(--red);font-size:.7rem;
+  letter-spacing:.14em;text-transform:uppercase;margin:1rem 0 .4rem;}
+.nf-head::after{content:"";flex:1;border-top:1px solid var(--line-hi);}
+.nf-row{display:flex;align-items:baseline;gap:.35rem;}
+.nf-key{color:var(--cyan);white-space:nowrap;}
+.nf-dots{flex:1;border-bottom:1px dotted var(--line-hi);position:relative;top:-.28em;min-width:1.5rem;}
+.nf-val{color:var(--ink-soft);white-space:nowrap;text-align:right;}
+.nf-val a{border:0;color:var(--ink);}
+.nf-val a:hover{color:var(--cyan);}
+.nf-val .g{color:var(--green);} .nf-val .r{color:var(--red);}
+@media(max-width:640px){
+  .neofetch{flex-direction:column;gap:1rem;}
+  .nf-ascii{align-self:center;font-size:.5rem;}
+  .nf-val{white-space:normal;text-align:left;}
+  .nf-dots{min-width:.75rem;}
+}
