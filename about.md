@@ -4,11 +4,9 @@ title: about
 permalink: /about/
 ---
 <div class="section-head"><h2>about</h2><span class="rule"></span></div>
-<div class="prose intro">
+<div class="prose intro" markdown="1">
 
-I'm **YadoreZ**. I break software apart to understand how it works, then write
-down what I learned — reverse engineering, game hacking, and malware analysis.
-Lately I'm extending that into robotics.
+I'm **YadoreZ**. I'm from Philippines and been trying to get into RE field. Currently, I'm studying and focusing on Game Hacking/Anti-Cheat and Physical AI/Robotics Hacking.
 
 `[RE]` reversing & crackmes · `[GH]` game hacking · `[CERT]` certifications ·
 `[ROBO]` robotics · `[LIFE]` notes.
