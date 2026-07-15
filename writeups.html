@@ -1,0 +1,25 @@
+---
+layout: default
+title: writeups
+permalink: /writeups/
+---
+<div class="section-head"><h2>writeups</h2><span class="rule"></span></div>
+<div class="filters" role="group" aria-label="Filter by category">
+  <button class="filter" data-filter="all" aria-pressed="true">all</button>
+  <button class="filter" data-filter="re" aria-pressed="false">[RE]</button>
+  <button class="filter" data-filter="gh" aria-pressed="false">[GH]</button>
+  <button class="filter" data-filter="cert" aria-pressed="false">[CERT]</button>
+  <button class="filter" data-filter="robotics" aria-pressed="false">[ROBO]</button>
+  <button class="filter" data-filter="life" aria-pressed="false">notes</button>
+</div>
+<div class="entries" id="entry-list">
+  {%- for post in site.posts -%}{%- include entry.html post=post -%}{%- endfor -%}
+</div>
+<p class="hero__blurb" id="empty-msg" hidden style="text-align:left;color:var(--dim)">// nothing in this category yet.</p>
+<script>
+(function(){
+  var b=document.querySelectorAll('.filter'),e=document.querySelectorAll('#entry-list .entry'),m=document.getElementById('empty-msg');
+  function a(f){var s=0;e.forEach(function(el){var ok=f==='all'||el.dataset.cat===f;el.style.display=ok?'':'none';if(ok)s++;});m.hidden=s!==0;}
+  b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.setAttribute('aria-pressed','false');});x.setAttribute('aria-pressed','true');a(x.dataset.filter);});});
+})();
+</script>

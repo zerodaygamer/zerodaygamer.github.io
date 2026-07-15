@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{%- assign cat = page.category | default: page.categories.first | default: page.tags.first | default: "note" | downcase -%}
+{%- case cat -%}
+  {%- when "re","crackme","reversing","malware" -%}{% assign tc="tag--re" %}{% assign tl="RE" %}
+  {%- when "gamehacking","gh","game-hacking" -%}{% assign tc="tag--gh" %}{% assign tl="GH" %}
+  {%- when "cert","certification" -%}{% assign tc="tag--cert" %}{% assign tl="CERT" %}
+  {%- when "robotics","robo" -%}{% assign tc="tag--robo" %}{% assign tl="ROBO" %}
+  {%- when "life" -%}{% assign tc="tag--life" %}{% assign tl="LIFE" %}
+  {%- else -%}{% assign tc="tag--life" %}{% assign tl=cat | upcase %}
+{%- endcase -%}
+<article>
+  <header class="post-header">
+    <div class="post-meta">
+      <span class="entry__tag {{ tc }}">[{{ tl }}]</span>
+      <span class="sep">•</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+  <div class="prose">{{ content }}</div>
+  <nav class="post-nav" aria-label="Post navigation">
+    {%- if page.previous.url -%}<a href="{{ page.previous.url | relative_url }}">← {{ page.previous.title | truncate: 32 }}</a>
+    {%- else -%}<span class="disabled">← older</span>{%- endif -%}
+    {%- if page.next.url -%}<a href="{{ page.next.url | relative_url }}">{{ page.next.title | truncate: 32 }} →</a>
+    {%- else -%}<span class="disabled">newer →</span>{%- endif -%}
+  </nav>
+</article>

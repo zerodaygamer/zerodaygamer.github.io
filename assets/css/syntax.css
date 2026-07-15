@@ -1,0 +1,14 @@
+/* Rouge syntax highlighting — dark, red/cyan-leaning */
+.highlight .c,.highlight .cm,.highlight .c1,.highlight .cs{color:#565b64;font-style:italic;}
+.highlight .k,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr,.highlight .kt{color:#ff6b84;}
+.highlight .o,.highlight .ow{color:#1fd6ff;}
+.highlight .n,.highlight .na,.highlight .nb,.highlight .nx{color:#c2c7ce;}
+.highlight .nf,.highlight .fm{color:#1fd6ff;}
+.highlight .nc,.highlight .nn{color:#f5b544;}
+.highlight .s,.highlight .s1,.highlight .s2,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx,.highlight .sr,.highlight .ss{color:#5ef08a;}
+.highlight .m,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,.highlight .il{color:#f5b544;}
+.highlight .nt{color:#ff2d4b;}
+.highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi{color:#1fd6ff;}
+.highlight .gd{color:#ff2d4b;} .highlight .gi{color:#5ef08a;}
+.highlight .gh{color:#f5b544;font-weight:700;}
+.highlight .err{color:#ff2d4b;} .highlight .p{color:#828892;} .highlight .cp{color:#f5b544;}

@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
+      <span class="brand__mark" aria-hidden="true">YZ</span>
+      <span class="brand__name">{{ site.title }}</span>
+    </a>
+    {%- assign p = page.url -%}
+    <nav class="nav" aria-label="Primary">
+      <a href="{{ '/' | relative_url }}"        {% if p == '/' %}aria-current="page"{% endif %}>home</a>
+      <a href="{{ '/writeups/' | relative_url }}"{% if p contains '/writeups' %}aria-current="page"{% endif %}>writeups</a>
+      <a href="{{ '/about/' | relative_url }}"   {% if p contains '/about' %}aria-current="page"{% endif %}>about</a>
+      <a href="{{ '/feed.xml' | relative_url }}">rss</a>
+    </nav>
+  </div>
+</header>
