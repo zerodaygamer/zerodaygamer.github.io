@@ -5,6 +5,7 @@ description: >-
   Writeups and field notes on reverse engineering, game hacking,
   malware analysis, and robotics — by YadoreZ.
 author: YadoreZ
+future: true
 
 # ---- urls (EDIT before deploy) ----
 # Personal site repo (<you>.github.io): leave baseurl empty.
