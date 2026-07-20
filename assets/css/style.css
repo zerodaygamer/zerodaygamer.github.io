@@ -247,3 +247,41 @@
     .nf-val{white-space:normal;text-align:left;}
     .nf-dots{min-width:.75rem;}
   }
+  
+  /* ---------- code block language label (top-right tab) ---------- */
+  .prose .highlighter-rouge{position:relative;}
+  .prose .highlighter-rouge::before{
+    content:"code";
+    position:absolute;top:0;right:0;z-index:2;pointer-events:none;
+    font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;line-height:1;
+    color:var(--dim);background:var(--bg);
+    border-left:1px solid var(--line);border-bottom:1px solid var(--line);
+    border-radius:0 6px 0 6px;padding:.28rem .55rem;}
+  /* per-language names (Rouge lowercases these in the class) */
+  .prose .language-bash::before,.prose .language-sh::before{content:"bash";}
+  .prose .language-shell::before,.prose .language-console::before{content:"shell";}
+  .prose .language-powershell::before{content:"powershell";}
+  .prose .language-asm::before,.prose .language-nasm::before{content:"asm";}
+  .prose .language-c::before{content:"c";}
+  .prose .language-cpp::before,.prose .language-c\+\+::before{content:"c++";}
+  .prose .language-csharp::before{content:"c#";}
+  .prose .language-python::before,.prose .language-py::before{content:"python";}
+  .prose .language-javascript::before,.prose .language-js::before{content:"javascript";}
+  .prose .language-typescript::before,.prose .language-ts::before{content:"typescript";}
+  .prose .language-json::before{content:"json";}
+  .prose .language-yaml::before,.prose .language-yml::before{content:"yaml";}
+  .prose .language-toml::before{content:"toml";}
+  .prose .language-html::before{content:"html";}
+  .prose .language-css::before{content:"css";}
+  .prose .language-ruby::before,.prose .language-rb::before{content:"ruby";}
+  .prose .language-go::before{content:"go";}
+  .prose .language-rust::before,.prose .language-rs::before{content:"rust";}
+  .prose .language-java::before{content:"java";}
+  .prose .language-sql::before{content:"sql";}
+  .prose .language-http::before{content:"http";}
+  .prose .language-diff::before{content:"diff";}
+  .prose .language-markdown::before,.prose .language-md::before{content:"markdown";}
+  .prose .language-dockerfile::before{content:"dockerfile";}
+  .prose .language-makefile::before{content:"makefile";}
+  .prose .language-xml::before{content:"xml";}
+  .prose .language-text::before,.prose .language-plaintext::before{content:"text";}
