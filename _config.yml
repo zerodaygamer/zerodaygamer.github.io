@@ -8,8 +8,8 @@ author: YadoreZ
 future: true
 
 # ---- urls ----
-url: "https://yadorez.tech/"
-baseurl: "https://yadorez.tech/"
+url: "https://yadorez.tech"
+baseurl: "/"
 
 # ---- socials ----
 github_username: zerodaygamer
