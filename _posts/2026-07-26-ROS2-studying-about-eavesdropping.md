@@ -45,7 +45,7 @@ ros2 run rqt_image_view rqt_image_view
 
 ![camera topic](/images/eavesdropping/robot_eye.png)
 
-This is the image showing what is the camera topic is leaking as of the moment, if the robot is moving, this image viewer is also moving. 
+This is the image showing what the camera topic is leaking as of the moment, if the robot is moving, this image viewer is also moving. We can confirm the encoding of the kinect_camera by running the command `ros2 topic echo /bcr_bot/kinect_camera --field encoding --once`. The result here is `32FC1` which turned out to be a depth image not a normal RGB feed. For depth image, each pixel encodes distance not color.
 
 Now that I was able to get my curiousity of what the camera topic contains, I proceeded with other stuff. Next is the /bcr_bot/scan, since this is my next target, I needed to do the stuff I did before which is run the command `ros2 interface show sensor_msgs/msg/LaserScan` to know the description and field on this structure.
 
