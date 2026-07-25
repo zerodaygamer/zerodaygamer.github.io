@@ -43,11 +43,11 @@ Now that we know how to list the topics, we can proceed with interacting with th
 ros2 run rqt_image_view rqt_image_view
 ```
 
-![robot eye](/images/eavesdropping/robot_eye.png)
+![camera topic](/images/eavesdropping/robot_eye.png)
 
-This is the image showing what is the robot seeing as of the moment, if the robot is moving, this image viewer is also moving which shows what the robot is seeing at the moment.
+This is the image showing what is the camera topic is leaking as of the moment, if the robot is moving, this image viewer is also moving. 
 
-Now that I was able to get my curiousity of what the robot see, I proceeded with other stuff. Next is the /bcr_bot/scan, since this is my next target, I needed to do the stuff I did before which is run the command `ros2 interface show sensor_msgs/msg/LaserScan` to know the description and field on this structure.
+Now that I was able to get my curiousity of what the camera topic contains, I proceeded with other stuff. Next is the /bcr_bot/scan, since this is my next target, I needed to do the stuff I did before which is run the command `ros2 interface show sensor_msgs/msg/LaserScan` to know the description and field on this structure.
 
 ![/bcr_bot/scan structure](/images/eavesdropping/LiDAR.png)
 
