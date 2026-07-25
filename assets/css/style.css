@@ -1,5 +1,5 @@
 /* =========================================================
-   YadoreZ — grain + chromatic-glitch theme
+   YadoreZ â€” grain + chromatic-glitch theme
    Boldness lives in the wordmark. Content stays readable.
    ========================================================= */
 
@@ -179,14 +179,14 @@
     padding:.1rem .35rem;font-size:.85em;color:var(--cyan);}
   /* code blocks: exactly ONE box, whether GitHub-Pages Rouge nests
      (div.highlighter-rouge > div.highlight > pre.highlight) or it's a plain <pre> */
-  .prose .highlighter-rouge{
+  .prose div.highlighter-rouge{
     background:#08090b;border:1px solid var(--line);border-radius:6px;
     margin:0 0 1.3rem;overflow:hidden;}
   .prose pre:not(.highlight){
     background:#08090b;border:1px solid var(--line);border-radius:6px;margin:0 0 1.3rem;}
   /* inner Rouge layers never draw their own box */
-  .prose .highlighter-rouge .highlight{background:none;margin:0;}
-  .prose .highlighter-rouge pre{background:none;border:0;border-radius:0;margin:0;}
+  .prose div.highlighter-rouge .highlight{background:none;margin:0;}
+  .prose div.highlighter-rouge pre{background:none;border:0;border-radius:0;margin:0;}
   .prose figure.highlight,.prose figure.highlight pre{background:none;border:0;margin:0;}
   /* text spacing + horizontal scroll live on the <pre> itself */
   .prose pre{padding:1rem 1.1rem;overflow-x:auto;font-size:.84rem;line-height:1.6;}
@@ -249,8 +249,8 @@
   }
   
   /* ---------- code block language label (top-right tab) ---------- */
-  .prose .highlighter-rouge{position:relative;}
-  .prose .highlighter-rouge::before{
+  .prose div.highlighter-rouge{position:relative;}
+  .prose div.highlighter-rouge::before{
     content:"code";
     position:absolute;top:0;right:0;z-index:2;pointer-events:none;
     font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;line-height:1;
@@ -258,33 +258,33 @@
     border-left:1px solid var(--line);border-bottom:1px solid var(--line);
     border-radius:0 6px 0 6px;padding:.28rem .55rem;}
   /* per-language names (Rouge lowercases these in the class) */
-  .prose .language-bash::before,.prose .language-sh::before{content:"bash";}
-  .prose .language-shell::before,.prose .language-console::before{content:"shell";}
-  .prose .language-powershell::before{content:"powershell";}
-  .prose .language-asm::before,.prose .language-nasm::before{content:"asm";}
-  .prose .language-c::before{content:"c";}
-  .prose .language-cpp::before,.prose .language-c\+\+::before{content:"c++";}
-  .prose .language-csharp::before{content:"c#";}
-  .prose .language-python::before,.prose .language-py::before{content:"python";}
-  .prose .language-javascript::before,.prose .language-js::before{content:"javascript";}
-  .prose .language-typescript::before,.prose .language-ts::before{content:"typescript";}
-  .prose .language-json::before{content:"json";}
-  .prose .language-yaml::before,.prose .language-yml::before{content:"yaml";}
-  .prose .language-toml::before{content:"toml";}
-  .prose .language-html::before{content:"html";}
-  .prose .language-css::before{content:"css";}
-  .prose .language-ruby::before,.prose .language-rb::before{content:"ruby";}
-  .prose .language-go::before{content:"go";}
-  .prose .language-rust::before,.prose .language-rs::before{content:"rust";}
-  .prose .language-java::before{content:"java";}
-  .prose .language-sql::before{content:"sql";}
-  .prose .language-http::before{content:"http";}
-  .prose .language-diff::before{content:"diff";}
-  .prose .language-markdown::before,.prose .language-md::before{content:"markdown";}
-  .prose .language-dockerfile::before{content:"dockerfile";}
-  .prose .language-makefile::before{content:"makefile";}
-  .prose .language-xml::before{content:"xml";}
-  .prose .language-text::before,.prose .language-plaintext::before{content:"text";}
+  .prose div.language-bash::before,.prose div.language-sh::before{content:"bash";}
+  .prose div.language-shell::before,.prose div.language-console::before{content:"shell";}
+  .prose div.language-powershell::before{content:"powershell";}
+  .prose div.language-asm::before,.prose div.language-nasm::before{content:"asm";}
+  .prose div.language-c::before{content:"c";}
+  .prose div.language-cpp::before,.prose div.language-c\+\+::before{content:"c++";}
+  .prose div.language-csharp::before{content:"c#";}
+  .prose div.language-python::before,.prose div.language-py::before{content:"python";}
+  .prose div.language-javascript::before,.prose div.language-js::before{content:"javascript";}
+  .prose div.language-typescript::before,.prose div.language-ts::before{content:"typescript";}
+  .prose div.language-json::before{content:"json";}
+  .prose div.language-yaml::before,.prose div.language-yml::before{content:"yaml";}
+  .prose div.language-toml::before{content:"toml";}
+  .prose div.language-html::before{content:"html";}
+  .prose div.language-css::before{content:"css";}
+  .prose div.language-ruby::before,.prose div.language-rb::before{content:"ruby";}
+  .prose div.language-go::before{content:"go";}
+  .prose div.language-rust::before,.prose div.language-rs::before{content:"rust";}
+  .prose div.language-java::before{content:"java";}
+  .prose div.language-sql::before{content:"sql";}
+  .prose div.language-http::before{content:"http";}
+  .prose div.language-diff::before{content:"diff";}
+  .prose div.language-markdown::before,.prose div.language-md::before{content:"markdown";}
+  .prose div.language-dockerfile::before{content:"dockerfile";}
+  .prose div.language-makefile::before{content:"makefile";}
+  .prose div.language-xml::before{content:"xml";}
+  .prose div.language-text::before,.prose div.language-plaintext::before{content:"text";}
   
   /* ---------- image lightbox ---------- */
   .prose img{cursor:zoom-in;transition:opacity .12s,border-color .12s;}
