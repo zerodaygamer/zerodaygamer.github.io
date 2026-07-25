@@ -304,4 +304,3 @@
   .lightbox__hint b{color:var(--cyan);}
   body.lb-open{overflow:hidden;}
   @media (prefers-reduced-motion:reduce){.lightbox{transition:none;}}
-  
