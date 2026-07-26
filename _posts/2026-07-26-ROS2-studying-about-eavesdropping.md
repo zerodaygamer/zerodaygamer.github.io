@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Learning Eavesdropping on ROS2"
-date: 2026-07-26 17:36:00
+date: 2026-07-26 03:13:37
 category: robo
 ---
 On my previous post, I studied about ROS2 Topic Injection with Gazebo. This time, I'll try to add new stuff I learned and it is about eavesdropping. So eavesdropping is basically reading on what the robot senses or does. For this one, with zero credential since the default ROS2 DDS has no authentication. So before any injection, this should be done first to learn what is the message format is and publish rates so your injection command will look legitimate.
