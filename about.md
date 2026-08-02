@@ -24,6 +24,6 @@ permalink: /about/
   <div class="nf-head">Contact</div>
   <div class="nf-row"><span class="nf-key">Guided Hacking</span><span class="nf-dots"></span><span class="nf-val"><a href="https://guidedhacking.com/members/{{ site.gh_username }}/">@{{ site.gh_username }}</a></span></div>
   <div class="nf-row"><span class="nf-key">GitHub</span><span class="nf-dots"></span><span class="nf-val"><a href="https://github.com/{{ site.github_username }}">@{{ site.github_username }}</a></span></div>
-  <div class="nf-row"><span class="nf-key">Twitter</span><span class="nf-dots"></span><span class="nf-val"><a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a></span></div>
+  <div class="nf-row"><span class="nf-key">X</span><span class="nf-dots"></span><span class="nf-val"><a href="https://x.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a></span></div>
 </div>
 </div>
